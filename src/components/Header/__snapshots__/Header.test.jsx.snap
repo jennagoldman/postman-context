@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches a snapshot 1`] = `
+<header>
+  <h1>
+    Postman API Client
+  </h1>
+</header>
+`;

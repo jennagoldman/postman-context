@@ -1,6 +1,6 @@
 .responseSection {
-  /* padding: 30px 0; */
-  font-size: 16px;
+  font-size: 1em;
   max-height: 600px;
   overflow: auto;
+  width: 55rem;
 }
