@@ -10,7 +10,7 @@ const RequestForm = () => (
             <input 
               className={styles.urlInput} 
               type="text" 
-              name="requestUrl" 
+              name="url" 
               value={url} 
               id="url" 
               onChange={onUrlChange} 
@@ -62,7 +62,11 @@ const RequestForm = () => (
       <section>
         <fieldset>
           <legend>REQUEST BODY</legend>
-          <textarea value={body} onChange={onBodyChange} placeholder="Raw JSON" />
+          <textarea 
+            name="body"
+            value={body} 
+            onChange={onBodyChange} 
+            placeholder="Raw JSON" />
         </fieldset>
       </section>
     

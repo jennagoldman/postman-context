@@ -9,17 +9,11 @@ export const RequestProvider = ({ children }) => {
   const [body, setBody] = useState('');
   const [response, setResponse] = useState('');
 
-  const handleUrlChange = ({ target }) => {
-    setUrl(target.value);
-  };
-
-  const handleMethodChange = ({ target }) => {
-    setMethod(target.value);
-  };
-
-  const handleBodyChange = ({ target }) => {
-    setBody(target.value);
-  };
+  const handleChange = ({ target }) => {
+    if(target.name === 'url') setUrl(target.value);
+    if(target.name === 'method') setMethod(target.value);
+    if(target.name === 'body') setBody(target.value);
+  }
 
   const handleRequestSubmit = (event) => {
     event.preventDefault();
