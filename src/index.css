@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 300;
+  background: #001121;
+  width: 75rem;
+  margin: 1rem auto 2rem auto;
+  max-width: 1150px;  
+}

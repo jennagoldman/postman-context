@@ -1,0 +1,80 @@
+.formContainer {
+  margin: 1rem 0;
+  width: 55rem;
+  display: inline-block;
+}
+
+.formSection {
+  width: 55rem;
+}
+
+.urlDiv {
+  display: inline-block;
+  width: 35rem;
+}
+
+.urlInput {
+  width: 32rem;
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.methodsDiv {
+  display: inline-block;
+  width: 20rem;
+}
+
+fieldset {
+  border: 1px solid #fc40e6;
+}
+
+.methodsDiv fieldset {
+  padding: 1.3rem 1rem 2rem 1rem;
+}
+
+input {
+  margin: 0.75rem;
+  border: 1px solid #fc40e6;
+  font-size: 1em;
+  font-family: 'Cairo', sans-serif;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input:checked + label {
+  background: #fc40e6;
+  border: 1px solid #fc40e6;
+  color: #fff;
+  font-weight: 600;
+}
+
+input + label {
+  text-transform: uppercase;
+  padding:  0.1rem 0.5rem;
+  margin: 0.35rem;
+  cursor: pointer;
+  border: 1px solid #fc40e6;
+  font-size: 1em;
+}
+
+textarea {
+  width: 51rem;
+  height:15rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #fc40e6;
+  font-size: 1em;
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.25rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .urlDiv, .methodsDiv {
+    display: block;
+    width: 55rem;
+  }
+
+}

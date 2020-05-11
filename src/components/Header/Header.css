@@ -1,0 +1,9 @@
+h1 {
+  font-weight: 600;
+  color: #fc40e6;
+  margin: 1rem 0 0 0;
+}
+
+header {
+  border-bottom: 1px solid #fc40e6;
+} 
