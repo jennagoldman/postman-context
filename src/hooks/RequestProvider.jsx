@@ -1,5 +1,7 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
+import makeRequest from '../services/make-request.js';
 import PropTypes from 'prop-types';
+import RequestForm from '../components/Postman/RequestForm.jsx';
 
 export const RequestContext = createContext();
 
@@ -62,19 +64,25 @@ RequestProvider.propTypes = {
 
 export const useRequestContext = () => {
   const context = useContext(RequestContext);
+  return context;
 }
 
-export const useUrl = () => {
-  const { url } = useContext(RequestContext);
-  return url;
+export const useResponse = () => {
+  const { response } = useContext(RequestContext);
+  return response;
 }
 
-export const useMethod = () => {
-  const { method } = useContext(RequestContext);
-  return method;
-}
+// export const useUrl = () => {
+//   const { url } = useContext(RequestContext);
+//   return url;
+// }
 
-export const useBody = () => {
-  const { body } = useContext(RequestContext);
-  return body;
-}
+// export const useMethod = () => {
+//   const { method } = useContext(RequestContext);
+//   return method;
+// }
+
+// export const useBody = () => {
+//   const { body } = useContext(RequestContext);
+//   return body;
+// }

@@ -1,0 +1,83 @@
+.formContainer {
+  margin: 15px 0;
+  width: 75%;
+  display: inline-block;
+}
+
+.formSection {
+  /* display: flex;
+  justify-content: space-between; */
+  width: 100%;
+}
+
+.urlDiv {
+  display: inline-block;
+  width: 65%;
+}
+
+.urlInput {
+  width: 97%;
+  padding: 5px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.methodsDiv {
+  display: inline-block;
+  width: 25%;
+}
+
+fieldset {
+  border: 1px solid #fc40e6;
+}
+
+.methodsDiv fieldset {
+  padding: 1rem;
+}
+
+input {
+  margin: 10px;
+  padding: 0 5px;
+  border: 1px solid #fc40e6;
+  font-size: 16px;
+  font-family: 'Cairo', sans-serif;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input:checked + label {
+  background: #fc40e6;
+  border: 1px solid #fc40e6;
+  color: #fff;
+  font-weight: 600;
+}
+
+input + label {
+  text-transform: uppercase;
+  padding:  0.1rem 0.5rem;
+  margin: 0.35rem;
+  cursor: pointer;
+  border: 1px solid #fc40e6;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 98%;
+  height:250px;
+  margin:30px auto;
+  padding: 5px;
+  border: 1px solid #fc40e6;
+  font-size: 16px;
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.25rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .urlDiv, .methodsDiv {
+    display: block;
+    width: 100%;
+  }
+
+}

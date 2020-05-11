@@ -1,8 +1,12 @@
 import React from 'react';
+import { useResponse } from '../../hooks/RequestProvider.jsx';
 import ReactJson from 'react-json-view';
 import styles from './Response.css';
 
-const Response = ({ response }) => (
+const Response = () => {
+  const response = useResponse();
+
+  return (
   <section className={styles.responseSection}>
     <fieldset>
       <legend>RESPONSE</legend>
@@ -34,6 +38,7 @@ const Response = ({ response }) => (
     </fieldset>
   </section>
 
-);
+  );
+};
 
 export default Response;
