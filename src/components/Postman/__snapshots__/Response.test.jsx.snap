@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Response matches a snapshot 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "body": "",
+      "handleChange": [Function],
+      "handleHistoryReset": [Function],
+      "handleRequestSubmit": [Function],
+      "history": Array [],
+      "method": "",
+      "response": "",
+      "url": "",
+    }
+  }
+>
+  <Response />
+</ContextProvider>
+`;
