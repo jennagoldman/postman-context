@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RequestForm matches a snapshot 1`] = `
+exports[`RequestHistory matches a snapshot 1`] = `
 <ContextProvider
   value={
     Object {
@@ -15,6 +15,6 @@ exports[`RequestForm matches a snapshot 1`] = `
     }
   }
 >
-  <RequestForm />
+  <RequestHistory />
 </ContextProvider>
 `;
