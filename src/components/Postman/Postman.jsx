@@ -1,7 +1,7 @@
 import React from 'react';
 import RequestForm from './RequestForm.jsx';
-import Response from '../../components/Response/Response';
-import RequestHistory from '../../components/RequestHistory/RequestHistory.jsx';
+import RequestHistory from './RequestHistory.jsx';
+import Response from './Response.jsx';
 import styles from './Postman.css';
 
 const Postman = () => (

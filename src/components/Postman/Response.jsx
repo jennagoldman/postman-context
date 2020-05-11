@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactJson from 'react-json-view';
 import styles from './Response.css';
-import PropTypes from 'prop-types';
 
 const Response = ({ response }) => (
   <section className={styles.responseSection}>
@@ -36,9 +35,5 @@ const Response = ({ response }) => (
   </section>
 
 );
-
-Response.propTypes = {
-  response: PropTypes.any
-};
 
 export default Response;

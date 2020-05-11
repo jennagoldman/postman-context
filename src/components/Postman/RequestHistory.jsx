@@ -20,9 +20,4 @@ const RequestHistory = ({ history, onReset }) => {
   );
 };
 
-RequestHistory.propTypes = {
-  history: PropTypes.array.isRequired,
-  onReset: PropTypes.func.isRequired
-};
-
 export default RequestHistory;

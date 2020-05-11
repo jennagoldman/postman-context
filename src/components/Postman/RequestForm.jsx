@@ -2,11 +2,11 @@ import React from 'react';
 import { useRequestContext } from '../../hooks/RequestProvider.jsx';
 
 const RequestForm = () => {
-  const { url, method, body, response, handleChange, handleRequestSubmit, handleHistoryReset } = useRequestContext();
+  const { url, method, body, handleChange, handleRequestSubmit } = useRequestContext();
 
   return (
   <section className={styles.formContainer}>
-    <form onSubmit={onRequestSubmit}>
+    <form onSubmit={handleRequestSubmit}>
       <section className={styles.formSection}>
         <div className={styles.urlDiv}>
           <fieldset>
@@ -17,7 +17,7 @@ const RequestForm = () => {
               name="url" 
               value={url} 
               id="url" 
-              onChange={onUrlChange} 
+              onChange={handleChange} 
             />
           </fieldset>
         </div>
@@ -29,7 +29,7 @@ const RequestForm = () => {
               name="method" 
               value="get" 
               id="get" 
-              onChange={onMethodChange} 
+              onChange={handleChange} 
               checked={method === 'get'} 
             />
             <label htmlFor="get">Get</label>
@@ -38,7 +38,7 @@ const RequestForm = () => {
               name="method" 
               value="put" 
               id="put" 
-              onChange={onMethodChange} 
+              onChange={handleChange} 
               checked={method === 'put'}
             />
             <label htmlFor="put">Put</label>
@@ -47,7 +47,7 @@ const RequestForm = () => {
               name="method" 
               value="post" 
               id="post" 
-              onChange={onMethodChange} 
+              onChange={handleChange} 
               checked={method === 'post'} 
             />
             <label htmlFor="post">Post</label>
@@ -56,7 +56,7 @@ const RequestForm = () => {
               name="method" 
               value="delete" 
               id="delete" 
-              onChange={onMethodChange} 
+              onChange={handleChange} 
               checked={method === 'delete'} 
             />
             <label htmlFor="delete">Delete</label>
@@ -69,7 +69,7 @@ const RequestForm = () => {
           <textarea 
             name="body"
             value={body} 
-            onChange={onBodyChange} 
+            onChange={handleChange} 
             placeholder="Raw JSON" />
         </fieldset>
       </section>
