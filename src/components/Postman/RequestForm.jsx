@@ -1,6 +1,10 @@
 import React from 'react';
+import { useRequestContext } from '../../hooks/RequestProvider.jsx';
 
-const RequestForm = () => (
+const RequestForm = () => {
+  const { url, method, body, response, handleChange, handleRequestSubmit, handleHistoryReset } = useRequestContext();
+
+  return (
   <section className={styles.formContainer}>
     <form onSubmit={onRequestSubmit}>
       <section className={styles.formSection}>
@@ -74,3 +78,4 @@ const RequestForm = () => (
     </form>
   </section>
 );
+};
