@@ -52,7 +52,7 @@ export const RequestProvider = ({ children }) => {
   };
 
   return (
-    <RequestContext.Provider value={{ url, method, body, response, handleChange, handleRequestSubmit, handleHistoryReset}}>
+    <RequestContext.Provider value={{ url, method, body, response, history, handleChange, handleRequestSubmit, handleHistoryReset}}>
       {children}
     </RequestContext.Provider>
   )
@@ -71,18 +71,3 @@ export const useResponse = () => {
   const { response } = useContext(RequestContext);
   return response;
 }
-
-// export const useUrl = () => {
-//   const { url } = useContext(RequestContext);
-//   return url;
-// }
-
-// export const useMethod = () => {
-//   const { method } = useContext(RequestContext);
-//   return method;
-// }
-
-// export const useBody = () => {
-//   const { body } = useContext(RequestContext);
-//   return body;
-// }

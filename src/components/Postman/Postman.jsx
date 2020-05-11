@@ -8,7 +8,7 @@ const Postman = () => (
     <>
       <div className={styles.flexContainer}>
         <RequestForm />
-        {/* <RequestHistory /> */}
+        <RequestHistory />
       </div>
       <Response />
     </>
